@@ -1,0 +1,90 @@
+.login-form-background{
+    background-color:rgba(0, 0, 0, 0.9);
+    height:100%;
+    width:100%;
+    position:absolute;
+    z-index:990;
+    display:none;
+}
+.login-form{
+    background-color:var(--bgcolor);
+    border-radius:3px solid;
+    border-radius:5px;
+    position:absolute;
+    padding:10px;
+    width:400px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-weight:bold;
+    border:3px solid black;
+    outline:white solid 1px;
+    display:none;
+    z-index:999;
+}
+.login-form .login-close-button{
+    background-image:url(../imagens/close_button/esc.png);
+    background-size:100%;
+    width:20px;
+    height:20px;
+    cursor:pointer;
+    float:right;
+}
+.login-form .login-close-button:hover{
+    background-image:url(../imagens/close_button/esc-hover.png);
+}
+.login-form:hover{
+    background-image:var(--bgcolor-hover);
+}
+.login-form .site-id,.aba-amigo-leal .site-id{
+    display:flex;
+    align-items:center;
+}
+.login-form .site-id p,.aba-amigo-leal .site-id p{
+    font-size:30px;
+    font-weight:bold;
+}
+.login-form .credenciais-container{
+    width:300px;
+    margin:auto;
+}
+.login-form form input[type="text"],.login-form form input[type="password"]{
+    width:100%;
+    padding:4px 8px;
+}
+.login-form form .entrar-buttons-container{
+    display:flex;
+    justify-content:space-around;
+    width:60%;
+    margin:auto;
+}
+.login-form form .entrar-buttons-container input[type="submit"],.login-form .entrar-buttons-container a{
+    background-color:var(--vermelho-escuro);
+    text-decoration:none;
+    border:1px solid white;
+    border-radius:5px;
+    outline:black solid 2px;
+    width:100px;
+    padding:10px;
+    cursor:pointer;
+    color:white;
+    font-weight:bold;
+    font-size:12px;
+}
+.login-form form .entrar-buttons-container input[type="submit"]:hover,.login-form .entrar-buttons-container a:hover{
+    background-color:var(--vermelho-escuro-hover);
+}
+.login-form form p{
+    text-align:center;
+    font-size:12px;
+    font-weight:100;
+}
+.login-form form p a{
+    text-decoration:none;
+    border:none;
+    font-weight:bold;
+    color:black;
+}
+.login-form form p a:hover{
+    color:var(--vermelho-escuro);
+}

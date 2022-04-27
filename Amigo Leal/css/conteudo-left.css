@@ -1,0 +1,136 @@
+main .conteudo-left{
+    background-image:var(--roxo);
+    width:50%;
+    padding:10px;
+}
+.container-max-width{
+    max-width:600px;
+    margin:auto;
+}
+.conteudo-left .titulo-adote{
+    margin-top:100px;
+    margin-bottom:5%;
+    display:flex;
+    align-items:center;
+}
+.conteudo-left .titulo-adote div{
+    color:white;
+    flex:1;
+}
+.conteudo-left .titulo-adote div *{
+    margin-top:0;
+    margin-bottom:0;
+}
+.conteudo-left .titulo-adote div p{
+    margin-left:52px;
+    font-size:17px;
+}
+.conteudo-left .titulo-adote div:first-child{
+    border-right:2px solid;
+}
+.conteudo-left .titulo-adote div:last-child{
+    text-align:center;
+}
+.conteudo-left .titulo-adote span{
+    z-index:-1;
+}
+.conteudo-left .titulo-adote div span{
+    margin-left:0px;
+    font-size:35px;
+    font-weight:bold;
+    display:block;
+    font-weight:100;
+    transition:1s;
+}
+.conteudo-left .titulo-adote div[id="dog"] span{
+    transform:translateX(0);
+    width:auto;
+    overflow:visible;
+}
+.conteudo-left .titulo-adote div[id="cat"] span{
+    transform:translateX(0);
+    width:auto;
+    overflow:visible;
+}
+.conteudo-left .titulo-adote div[id="dog"] span:nth-child(2){
+    transform:translateX(-100%);
+    width:0;
+    height:0;
+    overflow:hidden;
+}
+.conteudo-left .titulo-adote div[id="cat"] span:nth-child(1){
+    transform:translateX(-100%);
+    width:0;
+    height:0;
+    overflow:hidden;
+}
+.post-content{
+    background-color:rgba(255, 255, 255, 0.8);
+    border-radius:5px;
+    padding:10px;
+    margin:auto auto 10px auto;
+    width:100%;
+    max-width:500px;
+    display:flex;
+    flex-direction:column;
+    cursor:pointer;
+}
+.post-content:hover{
+    background-color:rgba(255, 255, 255, 0.5);
+}
+.conteudo-left .post-content .animal-picture{
+    height:300px;
+    width:100%;
+    background-size:100%;
+    background-repeat:no-repeat;
+    border:2px solid;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.conteudo-left .post-content .animal-id{
+    background-color:white;
+    border:2px solid;
+    border-top:none;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+.conteudo-left .post-content .animal-id > p{
+    margin:0;
+    padding:3px;
+    font-weight:bold;
+}
+.conteudo-left .post-content .animal-id .animal-nome{
+    text-align:center;
+    font-size:20px;
+}
+.conteudo-left .post-content .animal-nome:hover{
+    color:var(--vermelho-escuro);
+}
+.conteudo-left .post-content .animal-id .divulgador,.conteudo-left .post-content .animal-id .span{
+    text-align:center;
+    font-size:10px;
+}
+.conteudo-left .post-content .animal-id .span{
+    font-size:12px;
+}
+.conteudo-left .post-content .animal-id .animal-desc{
+    opacity:0.7;
+}
+.conteudo-left a{
+    background-color:var(--vermelho-escuro);
+    text-decoration:none;
+    font-weight:bold;
+    width:50%;
+    outline:black solid 2px;
+    border:1px solid white;
+    border-radius:20px;
+    padding:5px 15px;
+    text-align:center;
+    color:white;
+    display:block;
+    margin:auto;
+    cursor:pointer;
+}
+.conteudo-left a:hover{
+    background-color:var(--vermelho-escuro-hover);
+}

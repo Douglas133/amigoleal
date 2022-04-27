@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/abas-abertas.css">
+        <link rel="stylesheet" href="css/animal-selection.css">
+        <link rel="stylesheet" href="css/cat-or-dog_inicial-screen.css">
+        <link rel="stylesheet" href="css/conteudo-left.css">
+        <link rel="stylesheet" href="css/desktop.css">
+        <link rel="stylesheet" href="css/login-form.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>AmigoLeal | Home Page</title>
+    </head>
+
+    <body>
+
+        <div class="login-form-background" onclick="fechaTelaFlutuante()"></div>
+        <div class="login-form">
+            <div class="login-close-button" onclick="fechaTelaFlutuante()"></div>
+
+            <div class="site-id">
+                <img src="imagens/logo/amigoleal_logo.png">
+                <p>AmigoLeal</p>
+            </div>
+
+            <form action="" method="POST">
+
+                <div class="credenciais-container">
+
+                    <label for="login">Login</label>
+                    <input type="text" id="login" name="login" required title="Insira seu login">
+
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required title="Insira sua senha">
+
+                </div>
+
+                <p>Esqueceu sua senha? <a href="#">Redefinir!</a></p>
+
+                <div class="entrar-buttons-container">
+                    <input type="submit" value="Entrar" title="Entre para ver o site completo!">
+                    <a href="#" title="Não possui uma conta?">Cadastre-se</a>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="cat-or-dog-background">
+        <div class="cat-or-dog">
+
+            <h2>Bem-vindo ao site
+                <div class="site-id">
+                <img src="imagens/logo/amigoleal_logo.png">
+                <p>AmigoLeal</p>
+                </div>
+            </h2>
+
+            <p>Faça a sua escolha:</p>
+
+            <div class="choose-dog" onclick="animalSelection('dog','imagens/dog.png')">
+                <img class="dog" src="imagens/animal_selection/dog.png">
+                <p class="dog-title">Cachorro</p>
+            </div>
+
+            <div class="choose-cat" onclick="animalSelection('cat','imagens/cat.png')">
+                <img class="cat" src="imagens/animal_selection/cat.png">
+                <p class="cat-title">Gato</p>
+            </div>
+
+            <div class="confirma-cat-or-dog" onclick="fechaTelaFlutuante()">Confirmar</div>
+
+        </div>
+        </div>
+        
+<!--CONTEUDO SUPERIOR-->
+
+
+<!--LOGO DO SITE-->
+        <div class="logo-id" title="Temos o dever de ajudar e o prazer de amar!" onclick="abreAba('amigoleal')" id="amigoleal">
+            <div class="logo"></div>
+            <div class="nome-site">AmigoLeal</div>
+        </div>
+<!--GUIAS DO SITE-->
+        <ul class="guias-site">
+            <li id="guia1" class="adotar" onclick="abreAba('guia1')">Adotar</li>
+            <li id="guia2" class="doe-aqui" onclick="abreAba('guia2')">Doe aqui</li>
+            <li id="guia3" class="denuncias" onclick="abreAba('guia3')">Denúncias</li>
+            <li id="guia4" class="relatorios" onclick="abreAba('guia4')">Relatórios</li>
+        </ul>
+<!--CONTEUDO CENTRAL-->
+
+<!--LADO ESQUERDO-->
+        <main>
+            <div class="conteudo-left">
+                <div class="container-max-width">
+
+                <!--TITULO CHAMATIVO - ADOTE UM BICHINHO-->
+                <div class="titulo-adote">
+                    <div class="titulo-animal" id="dog">
+                        <span>Cachorrinhos</span>
+                        <span>Gatinhos</span>
+                        <p>disponíveis à adoção</p>
+                    </div>
+                    <div>
+                        <span>Encontre</span>
+                        <p>o seu novo amigo</p>
+                    </div>
+                </div>
+                
+                <!--ANIMAIS DIVULGADOS-->
+                <div class="post-content" onclick="abreAba()">
+                    <img class="animal-picture" src="imagens/dogs/nina_ana.jpg" id="animal-picture-1">
+                    <div class="animal-id">
+                        <p class="animal-nome" id="animal-nome-1">Nina</p>
+                        <p class="divulgador" id="divulgador-1">Publicado por Ana Clara</p>
+                        <p class="animal-desc" id="animal-desc-1">Nina ama brincar e está ansiosa para ser adotada por uma boa alma.</p>
+                    </div>
+                </div>
+
+                <div class="post-content" onclick="abreAba()">
+                    <img class="animal-picture" src="imagens/dogs/carambola_vitor.jpg" id="animal-picture-2">
+                    <div class="animal-id">
+                        <p class="animal-nome" id="animal-nome-2">Carambola</p>
+                        <p class="divulgador" id="divulgador-2"><span>Publicado</span> por Vitor Goddin</p>
+                        <p class="animal-desc" id="animal-desc-2">Carambola precisa que alguém com um ambiente estruturado o adote.</p>
+                    </div>
+                </div>
+
+                <div class="post-content" onclick="abreAba()">
+                    <img class="animal-picture" src="imagens/dogs/bilbo_valeria.jpg" id="animal-picture-3">
+                    <div class="animal-id">
+                        <p class="animal-nome" id="animal-nome-3">Bilbo</p>
+                        <p class="divulgador" id="divulgador-3"><span>Publicado</span> por Valéria Abrão</p>
+                        <p class="animal-desc" id="animal-desc-3">Bilbo apareceu no meu portão faz 3 dias. Preciso que alguém pegue ele pra mim.</p>
+                    </div>
+                </div>
+
+                <a href="#" title="Veja mais bichinhos como os listados acima..." onclick="abreAba()">Ver mais</a>
+
+                </div>
+            </div>
+        </main>
+
+<!--ABAS ABERTAS-->
+        <div class="aba-lateral">
+
+            <div class="fechar" onclick="fechaTelaFlutuante()">Fechar</div>
+
+            <div class="aba-amigo-leal">
+                <div class="site-id">
+                    <img src="imagens/logo/amigoleal_logo.png">
+                    <p>AmigoLeal</p>
+                </div>
+                <p>Os animais abandonados não possuem abrigo e nem alimento, obrigando-os a comerem os resíduos descartados a céu aberto. O estresse e a ansiedade pela qual passam diminuem a expectativa de vida deles.
+                </p>
+                <p>Todos os dias, são resgatados animais em situação de rua, sendo eles enviados aos abrigos. A maior dificuldade no contexto em que vivemos é o de obter recursos para manter a grande quantidade de animais resgatados
+                </p>
+                <p>A adoção de animais é dificultada pelos poucos sites existentes com este propósito, obrigando as pessoas a recorrem às redes sociais quando é preciso divulgar algum caso de maus-tratos, desaparecimento ou doação. Por isso, viemos por meio deste projeto, conectar em um só lugar adotante e doador.
+                </p>
+                <q>Temos o dever de ajudar e o prazer de amar!</q><span> - AmigoLeal</span>
+                <br><br>
+                <b>Responsáveis pelo projeto:</b>
+                <ul>
+                    <li>
+                        <div class="responsavel-id">
+                            <img src="imagens/responsaveis/raylanne.JPG">
+                            <b>Raylanne</b>
+                        </div>
+                         Idealizadora do projeto, responsável pela modelagem do sistema, planejamento, análise e montagem dos diagramas de caso de uso</li>
+                    <li>
+                        <div class="responsavel-id">
+                            <img src="imagens/responsaveis/hugo.png">
+                            <b>Hugo</b>
+                        </div>
+                        Responsável pela pesquisa, auxílio na montagem do template de caso de uso e apresentação do projeto</li>
+                    <li>
+                        <div class="responsavel-id">
+                            <img src="imagens/responsaveis/douglas.JPG">
+                            <b>Douglas</b>
+                        </div>
+                        Desenvolvedor do sistema, responsável pelo design do projeto e pela programação, tanto front quanto back-end</li>
+                </ul>
+            </div>
+
+            <div class="aba-adotar">
+                <h2>Temos vários bichinhos precisando de um lar!</h2>
+                <form class="filtro-animais" action="" method="GET">
+                    <select name="especie" id="especie">
+                        <option value="td-especie">Todas as espécies</option>
+                        <option value="cao">Cachorro</option>
+                        <option value="gato">Gato</option>
+                    </select>
+                    <select name="sexo" id="sexo">
+                        <option value="td-sexo">Todos os sexos</option>
+                        <option value="male">Macho</option>
+                        <option value="female">Fêmea</option>
+                    </select>
+                    <select name="porte" id="porte">
+                        <option value="td-porte">Todos os portes</option>
+                        <option value="big">Grande</option>
+                        <option value="mid">Médio</option>
+                        <option value="small">Pequeno</option>
+                    </select>
+                    <select name="estado" id="estado">
+                        <option value="td-estado">Todos os estados</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                    <input type="submit" id="buscar" value="Buscar">
+                </form>
+                <div class="animais-divulgados">
+                    <div class="animal-1">
+                        <img src="imagens/dogs/bruce_charlles.jpg">
+                        <div class="animal-id">
+                            <p>Bruce</p>
+                            <p>Distrito Federal</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-2">
+                        <img src="imagens/dogs/filhotes_maria.jpg">
+                        <div class="animal-id">
+                            <p>Filhotes</p>
+                            <p>Goiás</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-3">
+                        <img src="imagens/cats/izabel_elizabeth.jpg">
+                        <div class="animal-id">
+                            <p>Izabel</p>
+                            <p>Santa Catarina</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-4">
+                        <img src="imagens/cats/filhote_marcos.jpg">
+                        <div class="animal-id">
+                            <p>Filhote</p>
+                            <p>São Paulo</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-5">
+                        <img src="imagens/cats/garfiel_andreia.jpg">
+                        <div class="animal-id">
+                            <p>Garfiel</p>
+                            <p>Rio de Janeiro</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-6">
+                        <img src="imagens/dogs/sansao_matos.jpg">
+                        <div class="animal-id">
+                            <p>Sansão</p>
+                            <p>Ceará</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-7">
+                        <img src="imagens/dogs/rodolfo_beto.jpg">
+                        <div class="animal-id">
+                            <p>Rodolfo</p>
+                            <p>Pernambuco</p>
+                        </div>
+                    </div>
+                    
+                    <div class="animal-8">
+                        <img src="imagens/dogs/chico_vania.jpg">
+                        <div class="animal-id">
+                            <p>Chico</p>
+                            <p>São Paulo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="animal-9">
+                        <img src="imagens/dogs/sweety_walkiria.jpg">
+                        <div class="animal-id">
+                            <p>Sweety</p>
+                            <p>Paraná</p>
+                        </div>
+                    </div>
+                    
+                    <div class="animal-10">
+                        <img src="imagens/cats/minnie_Beatriz.jpeg">
+                        <div class="animal-id">
+                            <p>Minnie</p>
+                            <p>São Paulo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="animal-11">
+                        <img src="imagens/dogs/simba_kaio.jpg">
+                        <div class="animal-id">
+                            <p>Simba</p>
+                            <p>Distrito Federal</p>
+                        </div>
+                    </div>
+                    
+                    <div class="animal-12">
+                        <img src="imagens/cats/galabriel_hugo.jpeg">
+                        <div class="animal-id">
+                            <p>Galadriel</p>
+                            <p>Bahia</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <ul class="pagination">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">>></a></li>
+                </ul>
+            </div>
+
+            <div class="aba-doe-aqui">
+
+                <div class="container-1">
+                    <h2>Faça a sua parte!</h2>
+                    <p>Temos parceria com vários abrigos que recebem todos os meses os valores aqui depositados. São vários bichinhos precisando de acolhimento.</p>
+                    <p>Nosso propósito é conectar você, apoiador, a essas entidades!</p>
+
+                    <div class="ajude">
+                        <img src="imagens/abas_imagens/doe_aqui/image1.jpg">
+                        <p>Ajude e salve uma vida!</p>
+                    </div>
+                </div>
+                <div class="container-2">
+
+                    <h3>1) Transferência bancária</h3>
+                    <p>Ajude fazendo uma Transferência bancária.<br></p>
+                    <b>*Dependendo do banco e do horário, a transferência pode levar até 2 dias úteis para cair!</b>
+                    <p>Depósito na conta:</p>
+                    <img src="imagens/abas_imagens/doe_aqui/mel.jpeg" title="Mel, filha da Adriana.">
+                    <ul>
+                        <li>Itaú</li>
+                        <li>Agência: 6734</li>
+                        <li>Conta corrente: 63622-2</li>
+                        <li>Associação AmigoLeal</li>
+                        <li>CPNJ: 34.118.117/0001-60</li>
+                    </ul>
+
+                    <h3>2) PIX</h3>
+                    <p>Ajude fazendo um PIX.<br></p>
+                    <b>*Geralmente o valor cai em menos de 30 segundos!</b>
+                    <ul>
+                        <li><b>CPNJ:</b> 34.118.117/0001-60</li>
+                        <li><b>e-mail:</b> contato@amigoleal.com.br</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+            <!--AMIGO LEAL - PLANETA TERRA-->
+            <div class="animal-planet" title="Dados da OMS apontam que, no Brasil, existem cerca de 30 milhões de animais abandonados! Desse total, 10 milhões são gatos e 20 milhões, cachorros.">
+                <!--CACHORRO OU GATO-->
+                <img class="amigo-leal" src="imagens/dog.png">
+                <div class="planeta-terra"></div>
+            </div>
+        
+            <!--ANIMAL SELECTION-->
+            <div class="animal-selection">
+                <div class="arrow-container" onclick="fechaAnimalSelection()">
+                    <div class="arrow"></div>
+                </div>
+                <div class="animal-option-container">
+                    <img src="imagens/animal_selection/dog_hover.png" class="dog-icon" title="Adote um cão..." onclick="animalSelection('dog','imagens/dog.png')">
+                    <img src="imagens/animal_selection/cat.png" class="cat-icon" title="Adote um gato..." onclick="animalSelection('cat','imagens/cat.png')">
+                </div>
+            </div>
+
+            <!--ENTRE COM A SUA CONTA-->
+            <div class="entrar" title="Temos vários -amigos- precisando de um lar.">
+                <p>Adote um <span>AMIGO!</span></p>
+                <p title="Entre em uma conta..." onclick="abreLoginForm()">ENTRAR</p>
+            </div>
+
+
+
+            <!--ANIMAL SELECTION - SCRIPT-->
+            <script src="js/animal-selection.js"></script>
+            <script src="js/aba-lateral.js"></script>
+            <!--ANIMAL SELECTION - SCRIPT-->
+
+
+        
+    </body>
+
+</html>

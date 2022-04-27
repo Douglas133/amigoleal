@@ -1,0 +1,96 @@
+/*ANIMAL SELECTION*/
+.animal-selection{
+    background-image:var(--azulClaro);
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    border:3px solid;
+    border-radius:5px;
+    outline:white solid 1px;
+    top:100%;
+    left:50%;
+    transform:translate(-50%,-100%);
+    z-index:500;
+    transition:0.3s;
+}
+.animal-selection img{
+    clip-path:circle(39% at 50% 53%);
+    width:80px;
+    height:65px;
+    cursor:pointer;
+}
+.animal-selection:hover{
+    background-image:var(--azulClaro2);
+}
+.animal-selection .dog-icon:hover{
+    background-color:var(--dog);
+}
+.animal-selection .cat-icon:hover{
+    background-color:var(--cat);
+}
+.animal-selection .arrow-container{
+    border-bottom:2px solid;
+    width:100%;
+    height:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+}
+.animal-selection .arrow-container:hover{
+    background-color:rgba(255, 255, 255, 0.3);
+}
+.animal-selection .arrow-container .arrow{
+    background-image:url(../imagens/animal_selection/down-arrow.png);
+    background-size:100%;
+    width:20px;
+    height:20px;
+}
+.closed-animal-selection{
+    transform:translate(-50%,-23px);
+}
+.closed-animal-selection .arrow-container .arrow{
+    background-image:url(../imagens/animal_selection/up-arrow.png);
+}
+
+
+
+/*ANIMAL - PLANET EARTH*/
+.animal-planet{
+    display:flex;
+    align-items:center;
+}
+.animal-planet .amigo-leal{
+    background-size:100%;
+    position:absolute;
+    top:100%;
+    left:100%;
+    z-index:150;
+    cursor:pointer;
+    transition:0.5s;
+}
+
+
+/*AMIGO LEAL - CACHORRO*/
+.animal-planet .amigo-leal[src="imagens/dog.png"]{
+    clip-path:polygon(40% 0%,100% 0%,100% 100%,30% 100%,0% 90%,0% 80%,15% 50%,25% 34%,20% 15%,30% 5% );
+    width:200px;
+    height:355px;
+    transform:translate(-100%,-150%);
+}
+.animal-planet:hover .amigo-leal[src="imagens/dog.png"]{
+    transform:translate(-100%,-158%);
+    cursor:pointer;
+}
+
+
+/*AMIGO LEAL - GATO*/
+.animal-planet .amigo-leal[src="imagens/cat.png"]{
+    clip-path:polygon(4% 0%,10% 0%,17% 8%,36% 7%, 43% 0%,48% 0%,50% 30%,67% 40%,78% 60%,100% 79%,100% 100%,0% 100%,13% 90%,19% 75%,7% 40%, 2% 20% );
+    width:200px;
+    height:316px;
+    transform:translate(-100%,-170%);
+}
+.animal-planet:hover .amigo-leal[src="imagens/cat.png"]{
+    transform:translate(-100%,-179%);
+}

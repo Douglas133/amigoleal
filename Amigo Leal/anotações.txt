@@ -1,0 +1,29 @@
+Na página inicial, funcionalidades a implementar:
+
+- Transformar apenas a logo em position:fixed e colocar as guias superioras dentro de uma div.conteudo-right;
+- Dentro de conteudo-right (display:flex e width:50%), criar uma div.aba-aberta (que quando fechada será translateX(100%)) com height:100% e overflow:scrollbar;
+- A div.aba-aberta terá translateX(0) quando aberta, z-index:600 e transition:0.5s;
+
+- Colocar z-index:999 no animal-selection;
+
+- Quando o usuário clicar na logo, abrir no lado direito uma aba com width:50% explicando o significado do projeto, as pessoas envolvidas (Raylanne, Hugo e Douglas) e qual o propósito disso tudo;
+
+- Quando o usuário clicar em um animal, abrir uma aba no lado direito, mostrando todos os detalhes;
+
+- Quando o usuário clicar numa guia superior, abrir uma aba mostrando um resumo da função;
+
+- Colocar um botão de fechar nas abas que o usuário abrir;
+
+- Colocar o botão "Entrar" para os usuários fora de sessão;
+
+- Usuários que estiverem logado, aparece um ícone de perfil no canto superior direito dentro da div conteudo-left, aonde, ao clicar, abre a lista:
+	- Acessar o site;
+	- Opções;
+	- Ajuda;
+	- Sair.
+
+- Criar um painel transparente no lado direito da tela mostrando as notificações pop-ups do site com z-index:999, mostrando notificações dos seguintes casos:
+	- Animal selecionado;
+	- Aba aberta;
+	- Mensagens de alerta ('Usuário não logado','Sessão encerrada','Sessão iniciada');
+	- Dicas simples.

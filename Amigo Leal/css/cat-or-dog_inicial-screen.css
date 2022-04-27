@@ -1,0 +1,93 @@
+.cat-or-dog-background{
+    background-color:rgba(0, 0, 0, 0.9);
+    height:100%;
+    width:100%;
+    position:absolute;
+    z-index:999;
+}
+.cat-or-dog{
+    background-color:var(--bgcolor);
+    border-radius:3px solid;
+    border-radius:5px;
+    position:absolute;
+    padding:10px;
+    width:400px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-weight:bold;
+    border:3px solid black;
+    outline:white solid 1px;
+}
+.cat-or-dog:hover{
+    background-image:var(--bgcolor-hover);
+}
+.cat-or-dog > div{
+    border:3px solid;
+    border-radius:5px;
+    display:flex;
+    margin-bottom:10px;
+}
+.cat-or-dog h2{
+    width:100%;
+}
+.cat-or-dog h2 .site-id{
+    display:flex;
+    justify-content:center;
+}
+.site-id img{
+    width:80px;
+    height:80px;
+}
+.site-id p{
+    border-bottom:2px solid;
+}
+.cat-or-dog > div{
+    cursor:pointer;
+}
+.cat-or-dog > div img{
+    clip-path:circle(39% at 50% 53%);
+    background-size:100%;
+    background-repeat:no-repeat;
+    width:80px;
+    height:65px;
+}
+.cat-or-dog > div p{
+    flex:1;
+    padding-left:20px;
+}
+.cat-or-dog .choose-dog{
+    background-color:var(--dog);
+}
+.cat-or-dog .choose-dog:hover{
+    background-image:var(--dog-hover);
+    border:1px solid white;
+    outline:black solid 3px;
+}
+.cat-or-dog .choose-cat:hover{
+    background-image:var(--cat-hover);
+    border:1px solid white;
+    outline:black solid 3px;
+}
+.cat-or-dog .choose-cat{
+    background-color:var(--cat);
+}
+.cat-or-dog .choose-dog:hover .dog{
+    background-color:var(--dog);
+}
+.cat-or-dog .choose-cat:hover .cat{
+    background-color:var(--cat);
+}
+.cat-or-dog > div:last-child{
+    background-image:none;
+    background-color:var(--vermelho-escuro);
+    color:white;
+    border:1px solid white;
+    outline:black solid 2px;
+    margin:auto;
+    width:100px;
+    padding:10px;
+}
+.cat-or-dog > div:last-child:hover{
+    background-color:var(--vermelho-escuro-hover);
+}

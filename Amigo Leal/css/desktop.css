@@ -1,0 +1,41 @@
+@media screen and (min-width:750px){
+
+/*CABEÇALHO*/
+.guias-site{
+    background-color:var(--bgcolor);
+    height:100px;
+    width:50%;
+    display:flex;
+    align-items:stretch;
+    border-bottom:1px solid;
+    list-style:none;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    position:absolute;
+    top:0;
+    left:50%;
+    z-index:600;
+}
+.guias-site li{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    color:black;
+    font-size:15px;
+    font-weight:600;
+}
+.guias-site li:hover{
+    background-image:var(--bgcolor-hover);
+    border-bottom:2px solid var(--vermelho-escuro);
+    color:darkred;
+}
+.guias-site-selected{
+    background-image:var(--bgcolor-hover);
+    border-bottom:2px solid var(--vermelho-escuro);
+    color:darkred;
+}
+
+}
