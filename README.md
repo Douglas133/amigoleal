@@ -1,3 +1,2 @@
-# AmigoLeal é um projeto de conclusão do curso Técnico em Informática da Escola Técnica de Ceilândia
-# O Projeto foi produzido em 2 meses, fazendo uso das linguagens: HTML, CSS, JavaScrip, PHP e SQL
-# Tivemos o objetivo de desenvolver um Sistema de Adoção de Animais, sendo esse um meio facilitador para a adoção e denúncia de maus-tratos
+## AmigoLeal é um pequeno projeto do curso Técnico em Informática da Escola Técnica de Ceilândia
+A ideia do projeto era desenvolver um pequeno sistema de adoção de animais, mas ao decorrer do desenvolvimento, vimos a necessidade de **recriar** o sistema com uma nova cara e um novo nome (Mi&Au).
